@@ -45,7 +45,8 @@ public class GulaMov : MonoBehaviour
         Rigidbody = GetComponent<Rigidbody2D>();
         currentPoint = pointB.transform;
 
-        Invoke("spawnBattery", 50f);
+        Invoke("spawnBattery", 30f);
+        Invoke("spawnBattery", 60f);
     }
 
     void Update()
