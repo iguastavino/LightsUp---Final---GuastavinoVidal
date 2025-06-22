@@ -52,7 +52,7 @@ public class LevelManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O) && DialogueManager.Instance.isDialogueActive)
         {
             DialogueManager.Instance.DisplayNextDialogueLine();
-            if (levelState == LevelState.BossFight)
+            if (levelState == LevelState.BossFight && BossIntro.instance.bossFight)
             {
                 BossManager.instance.started = true;
             }
